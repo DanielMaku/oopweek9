@@ -35,11 +35,12 @@ public class BankAccountTest {
     }
 
 
-   // @Test
-  //  void deposit(20, BankAccount.deposit)
-  //  {
-
-   // }
+    @Test
+    void depositPositive() {
+        account = new BankAccount("ACC12345", "Daniel", 500);
+        account.deposit(100);
+        assertEquals(600, account.getBalance());
+    }
 
 
 
